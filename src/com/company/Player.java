@@ -89,6 +89,7 @@ public class Player
         return y;
     }
     public int getAttack(){
+	System.out.println("Hello Kiefer, I made a small change");
         return attack;
     }
 }
