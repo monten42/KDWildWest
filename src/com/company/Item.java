@@ -1,21 +1,15 @@
 package com.company;
 
-public class Item {
+public class Item{
+
     private String name;
-    private String type;
-    private int modifier;
-    private String modiType;
-    public Item(String newname, String newtype){
-        name = newname;
-        type = newtype;
-    }
-    public use(){
+    private int listNum;
+
+
+    public Item(int listNum, String name){
+        this.name = name;
+        this.listNum = listNum;
 
     }
-    /*
-    public use(target){
-        target -= modifier;
-    }
-     */
 
 }
