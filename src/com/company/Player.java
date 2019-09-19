@@ -10,7 +10,7 @@ public class Player
     private int y;
     private int attack;
     private String name;
-   
+
     public Player(String name){
         this.name = name.substring(0, 1).toUpperCase() + name.substring(1).toLowerCase();
         maxHealth = 100;
@@ -21,13 +21,13 @@ public class Player
         y = 0;
         attack = 0;
     }
-    
+
     public void setMaxHealth(int amount){
         maxHealth = amount;
         if(maxHealth <= 0){
             maxHealth = 1;
         }
-    }  
+    }
     public void setHealth(int amount){
         health = amount;
         if(health > maxHealth){
@@ -35,14 +35,14 @@ public class Player
         }
         else if(health <= 0){
             health = 0;
-        }    
-    }   
+        }
+    }
     public void setMoney(int amount){
         money = amount;
         if(money < 0){
             money = 0;
         }
-    }  
+    }
     public void setX(int amount){
         x = amount;
         if(x < 0){
@@ -61,7 +61,7 @@ public class Player
             attack = 0;
         }
     }
-    
+
     public void printStats(){
         System.out.println(name + "'s stats");
         System.out.println("Health: " + health + "/" + maxHealth);
@@ -71,16 +71,19 @@ public class Player
         System.out.println("Position: (" + x + "," + y + ")");
         System.out.println();
     }
-    
+
+    public int getName(){
+        return name;
+    }
     public int getMaxHealth(){
         return maxHealth;
     }
     public int getHealth(){
         return health;
-    } 
+    }
     public int getArmor(){
         return armor;
-    }   
+    }
     public int getMoney(){
         return money;
     }
@@ -91,7 +94,6 @@ public class Player
         return y;
     }
     public int getAttack(){
-	System.out.println("Hello Kiefer, I made a small change");
         return attack;
     }
 }
