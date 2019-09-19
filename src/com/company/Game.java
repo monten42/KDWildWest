@@ -9,6 +9,7 @@ public class Game {
         System.out.println("What Would you like your name to be?: ");
         goodGuy = new Player(scanner.nextLine());
         System.out.println("Success!!! Your player's name is: "); //goodGuy.getName());
+        System.out.println("Get ready to play");
 
 
     }
