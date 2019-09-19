@@ -1,4 +1,5 @@
 package com.company;
+
 public class Player
 {
     private int maxHealth;
@@ -71,7 +72,7 @@ public class Player
         System.out.println("");
     }
 
-    public int getName(){
+    public String getName(){
         return name;
     }
     public int getMaxHealth(){

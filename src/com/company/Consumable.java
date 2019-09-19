@@ -1,10 +1,12 @@
 package com.company;
 
-public class Consumable extends Item{
+public class Consumable{
 
     private int health;
 
+
     public Consumable(int health){
+
         this.health = health;
 
     }
