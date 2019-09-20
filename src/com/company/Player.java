@@ -69,7 +69,7 @@ public class Player
         System.out.println("Attack: " + attack + " points");
         System.out.println("Money: " + money + " bucks");
         System.out.println("Position: (" + x + "," + y + ")");
-        System.out.println("");
+        System.out.println();
     }
 
     public String getName(){
